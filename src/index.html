@@ -1,4 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeTracker</title>
+</head>
+
+<body>
+<div id="app-container">
+    <div class="app">
+        <div class="poke-form">
+            <form id="pokeForm">
+                <div class="flex-parent">
+                    <label for="pokeId">Pokemon ID</label>
+                    <input class="form-control" type="input" id="pokeId" name="pokeId" value="" required />
+                    <button type="submit" class="btn btn-success">Who's That Pokemon?</button>
+                </div>
+            </form>
+        </div>
+        <div id="pokemon" class="poke-display">
+
+        </div>
+        <div id="savedpk" class="saved-poke"></div>
+    </div>
+</div>
+</body>
+
 </html>
