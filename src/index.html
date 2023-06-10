@@ -8,23 +8,49 @@
 </head>
 
 <body>
-<div id="app-container">
-    <div class="app">
-        <div class="poke-form">
-            <form id="pokeForm">
-                <div class="flex-parent">
-                    <label for="pokeId">Pokemon ID</label>
-                    <input class="form-control" type="input" id="pokeId" name="pokeId" value="" required />
-                    <button type="submit" class="btn btn-success">Who's That Pokemon?</button>
+    <div id="app-container">
+        <div class="app" style="font-family:Pokemon Pixel Font Regular">
+            <div class="poke-form">
+                <form id="pokeForm">
+                    <div class="flex-parent">
+                        <label for="pokeId">Pokemon ID</label>
+                        <input class="form-control" type="input" id="pokeId" name="pokeId" value="" required />
+                        <button type="submit" class="btn btn-success">Who's That Pokemon?</button>
+                    </div>
+                </form>
+            </div>
+            <div id="pokemon" class="poke-display">
+                <div id="nameBox" class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 id="pokeName"></h2>
+                        </div>
+                        <div class="col">
+                            <div class="container">
+                                <div class="row type-container" id="typeContainer">
+                                    <img id="firstType" class="type-image" src="">
+                                </div>
+                                <div class="row type-container" id="typeContainer">
+                                    <img id="secondType" class="type-image" src="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </form>
-        </div>
-        <div id="pokemon" class="poke-display">
+                <div id="pokeInfo"></div>
+                <img id="pokeFront" src="">
+                <img id="pokeBack" src="">
+                <div id="pokeStats" class="stat-list"></div>
+                <div id="pokeMoves" class="move-list"></div>
+            </div>
+            <div id="savedpk" class="saved-poke">
 
+            </div>
         </div>
-        <div id="savedpk" class="saved-poke"></div>
     </div>
-</div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
