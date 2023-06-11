@@ -13,9 +13,20 @@
             <div class="poke-form">
                 <form id="pokeForm">
                     <div class="flex-parent">
-                        <label for="pokeId">Pokemon ID</label>
-                        <input class="form-control" type="input" id="pokeId" name="pokeId" value="" required />
-                        <button type="submit" class="btn btn-success">Who's That Pokemon?</button>
+                        <h1 class="poke-title">PokeTracker</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control poke-input" type="input" id="pokeId" name="pokeId" value="" required
+                                        placeholder="Put your Pokemon's name or ID number here..." />
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn poke-submit">Who's That Pokemon?</button>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </form>
             </div>
@@ -24,6 +35,10 @@
                     <div class="row">
                         <div class="col">
                             <h2 id="pokeName"></h2>
+                        </div>
+                        <div class="col">
+                            <img id="pokeFront" src="">
+                            <img id="pokeBack" src="">
                         </div>
                         <div class="col">
                             <div class="container">
@@ -37,11 +52,19 @@
                         </div>
                     </div>
                 </div>
-                <div id="pokeInfo"></div>
-                <img id="pokeFront" src="">
-                <img id="pokeBack" src="">
-                <div id="pokeStats" class="stat-list"></div>
-                <div id="pokeMoves" class="move-list"></div>
+                <div class="container">
+                    <div class="col">
+                        <div id="pokeInfo" class="poke-info"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="pokeStats" class="stat-list poke-display"></div>
+                        </div>
+                        <div class="col">
+                            <div id="pokeMoves" class="move-list poke-display"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="savedpk" class="saved-poke">
 
