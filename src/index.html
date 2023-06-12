@@ -17,11 +17,11 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <input class="form-control poke-input" type="input" id="pokeId" name="pokeId" value="" required
-                                        placeholder="Put your Pokemon's name or ID number here..." />
+                                    <input class="form-control poke-input" type="input" id="pokeId" name="pokeId"
+                                        value="" required placeholder="Put your Pokemon's name or ID number here..." />
                                 </div>
                                 <div class="col">
-                                    <button type="submit" class="btn poke-submit">Who's That Pokemon?</button>
+                                    <button type="submit" class="btn btn-primary">Who's That Pokemon?</button>
                                 </div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@
                 </form>
             </div>
             <div id="pokemon" class="poke-display">
-                <div id="nameBox" class="container">
+                <div id="nameBox" class="container poke-data-box">
                     <div class="row">
                         <div class="col">
                             <div id="pokeName"></div>
@@ -55,11 +55,9 @@
                     </div>
                 </div>
                 <div class="container">
-                    <div class="col">
-                        <div id="pokeInfo" class="poke-info"></div>
-                    </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col poke-data-box">
+                            <div id="pokeInfo" class="poke-info"></div>
                             <div id="pokeStats" class="stat-list poke-display"></div>
                         </div>
                         <div class="col">
